@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #161616;
+}
+
+html {
+  font-family:'Yu Gothic', '游ゴシック', Yu Gothic, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: .3s;
+  opacity: 0.6;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 30vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ------------------------ */
+/* header */
+/* ------------------------ */
+header {
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header-list li {
+  margin-left: 20px;
+}
+
+.header-list a{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ------------------------ */
+/* top*/
+/* ------------------------ */
+
+.top {
+  position: relative;
+  height: 400px;
+}
+
+.top img {
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+  margin-left: 30%;
+}
+
+.top h2 {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+
+.top::after {
+  content: "";
+  background-color: rgb(185, 222, 236, 0.8);
+  height: 70vh;
+  width: 45%;
+  position: absolute;
+  top: -21%;
+  left: 0;
+  z-index: -1;
+}
+
+/* ------------------------ */
+/* about */
+/* ------------------------ */
+.about-wrapper {
+  margin: 0 30px;
+  display: flex;
+  height: 60vh;
+}
+
+.about img {
+  height: 100%;
+}
+.content {
+  margin-left: 20px;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
+
+/* ------------------------ */
+/* works */
+/* ------------------------ */
+.works {
+  position: relative;
+}
+
+.works h1::after {
+  content: "";
+  background-color: rgba(185, 222, 236, 0.8);
+  height: 40vh;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: 0; 
+  z-index: -1;
+}
+
+.menu-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 30%;
+  margin: 5% 3%;
+  box-shadow: 0 0 6px rgba(27, 19, 16, 0.4);
+}
+
+.menu h3 {
+  padding: 0 2%;
+}
+
+.menu p {
+  font-size: 1.4rem;
+  padding: 0 2% 2%;
+}
+
+/* ------------------------ */
+/* news */
+/* ------------------------ */
+.news {
+  width: 75%;
+  margin: 0 auto 30vh auto;
+}
+
+.news-wrapper {
+  margin-top: 3%;
+}
+
+.news-wrapper li {
+  height: 6vh;
+  display: flex;
+  padding-top: 2%;
+  border-bottom: 0.6px solid rgb(200, 200, 200);
+}
+
+time {
+  width: 20%;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.news-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* ------------------------ */
+/* recruit*/
+/* ------------------------ */
+.recruit {
+  position: relative;
+  height: 400px;
+}
+
+.recruit::after {
+  content: "";
+  background-color: rgba(185, 222, 236, 0.8);
+  height: 70vh;
+  width: 55%;
+  position: absolute;
+  top: 45%;
+  right: 0; 
+  z-index: -1;
+}
+
+.recruit img {
+  height: 90%;
+  width: 80%;
+  object-fit: cover;
+}
+
+.recruit h1 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  line-height: 50px;
+  padding: 0 5rem;
+}
+
+
+/* ------------------------ */
+/* footer*/
+/* ------------------------ */
+.footer-menu {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 10vh auto;
+}
+
+.footer-left li {
+  font-size: 1.4rem;
+}
+
+.small {
+  background-color: rgb(185, 222, 236);
+  padding: 4vh 0;
+}
+
+small p {
+  text-align: center;
+}
